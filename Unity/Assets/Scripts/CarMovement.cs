@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class CarMovement : MonoBehaviour
 {
-    public float engineForce = 2000f;
+    public float engineForce = 900f;
     public float steerAngle = 30f;
     public float breakForce = 30000f;
 
@@ -53,6 +53,15 @@ public class CarMovement : MonoBehaviour
             frontLeftCollider.enabled = false;
             rearRightCollider.enabled = false;
             rearLeftCollider.enabled = false;
+        }
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.CompareTag("Gem"))
+        {
+            Debug.Log("increased engine force");
+            engineForce *= 2;
         }
     }
 

@@ -4079,8 +4079,18 @@ MonoBehaviour:
   collectiblePrefab: {fileID: 1000010880751780, guid: c3c0707254334a64ca8198f7486e977d,
     type: 3}
   spawnInterval: 1
-  spawnArea: {x: 200, y: 1, z: 17}
-  count: 0
+  x1: -325
+  x2: -268
+  z1: -295
+  z2: 345
+  x1_: 261
+  x2_: 331
+  z1_: -317
+  z2_: 35
+  x1__: -216
+  x2__: 112
+  z1__: -428
+  z2__: -490
 --- !u!4 &1081584187
 Transform:
   m_ObjectHideFlags: 0
@@ -7224,6 +7234,34 @@ PrefabInstance:
     - target: {fileID: 114, guid: 981378ad8074d46f59ab1ded9a19caac, type: 3}
       propertyPath: syncedTransform.rot_z_setting.resolution
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114, guid: 981378ad8074d46f59ab1ded9a19caac, type: 3}
+      propertyPath: syncedGenerics.Array.data[0].syncFields.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114, guid: 981378ad8074d46f59ab1ded9a19caac, type: 3}
+      propertyPath: syncedGenerics.Array.data[0].syncFields.Array.data[3].max
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 114, guid: 981378ad8074d46f59ab1ded9a19caac, type: 3}
+      propertyPath: syncedGenerics.Array.data[0].syncFields.Array.data[3].min
+      value: -300
+      objectReference: {fileID: 0}
+    - target: {fileID: 114, guid: 981378ad8074d46f59ab1ded9a19caac, type: 3}
+      propertyPath: syncedGenerics.Array.data[0].syncFields.Array.data[3].maxInt
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 114, guid: 981378ad8074d46f59ab1ded9a19caac, type: 3}
+      propertyPath: syncedGenerics.Array.data[0].syncFields.Array.data[3].minInt
+      value: -300
+      objectReference: {fileID: 0}
+    - target: {fileID: 114, guid: 981378ad8074d46f59ab1ded9a19caac, type: 3}
+      propertyPath: syncedGenerics.Array.data[0].syncFields.Array.data[3].resolution
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114, guid: 981378ad8074d46f59ab1ded9a19caac, type: 3}
+      propertyPath: syncedGenerics.Array.data[0].syncFields.Array.data[3].fieldInfoName
+      value: speedIncrement
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 981378ad8074d46f59ab1ded9a19caac, type: 3}
