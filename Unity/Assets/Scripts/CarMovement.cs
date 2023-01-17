@@ -61,7 +61,7 @@ public class CarMovement : MonoBehaviour
         if (collision.collider.CompareTag("Gem"))
         {
             Debug.Log("increased engine force");
-            engineForce *= 2;
+            engineForce += 500f;
         }
     }
 
