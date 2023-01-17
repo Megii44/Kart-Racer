@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class CarMovement : MonoBehaviour
 {
-    public float engineForce = 900f;
+    public float engineForce = 2000f;
     public float steerAngle = 30f;
     public float breakForce = 30000f;
 
