@@ -25,10 +25,10 @@ public class CollectibleSpawner : MonoBehaviour
             for(int i = 0; i < 100; i++)
             {
                 // Generate a random position within the spawn area
-                Vector3 spawnPosition = new Vector3(Random.Range(-spawnArea.x, spawnArea.x), 12f, Random.Range(-spawnArea.z, spawnArea.z + 700f));
+                Vector3 spawnPosition = new Vector3(Random.Range(-spawnArea.x, spawnArea.x), 13.2f, Random.Range(-spawnArea.z, spawnArea.z + 700f));
 
                 // Instantiate the collectible prefab at the random position
-                Instantiate(collectiblePrefab, spawnPosition, Quaternion.identity);
+                Instantiate(collectiblePrefab, spawnPosition, Quaternion.Euler(-90, 0, 0));
 
                 count = count + 1;
             }
